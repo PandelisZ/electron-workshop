@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Current Prices</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./styles.css">
+	<style>
+	.row {
+		height: 100%
+	}
+	</style>
+
+  <!-- Scripts -->
+  <script>
+    delete module.exports
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="window.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <div id="container" class="container-fluid">
+
+    <!-- Eth Row -->
+    <div class="row eth">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h1>Ethereum <small>ETH</small></h1>
+        <h2>
+					<span id="eth-usd" class="price usd"></span>
+					<small id="eth-gbp" class="price gbp"></small>
+					<small><span class="fa fa-btc" aria-hidden="true"></span><span id="eth-btc" class="price"></span></small>
+          </h2>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

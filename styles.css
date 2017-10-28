@@ -1,0 +1,56 @@
+.btc, .btc>small {
+  background-color: #ff9900;
+  color: white;
+}
+
+.eth, .eth>small {
+  background-color: #3C3C3D;
+  color: white;
+}
+
+.ltc, .ltc>small {
+  background-color: silver;
+  color: white;
+}
+
+html, body, .container-fluid {
+  height: 100%;
+}
+
+.row {
+  height: 33.33333333%;
+}
+
+.row > div {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.price {
+  padding-right: 5px;
+}
+
+/* Add a ( before the change */
+.change::before {
+  content: '(';
+}
+
+/* Add a ) after the change */
+.change::after {
+  content: ')';
+}
+
+/* Add a $ before the price */
+.price.usd::before {
+  content: '$';
+}
+
+.price.gbp::before {
+  content: '£';
+}
+
+/* Hide the price and change when they are empty */
+.change:empty, .price:empty {
+  display: none;
+}
